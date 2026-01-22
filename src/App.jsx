@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import Articles from "./components/Articles"
 
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <Articles />
     </>
   )
 }
