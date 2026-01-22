@@ -3,13 +3,15 @@ function ArticleList({ articles }) {
     return (
 
         <ul>
-            {articles.map((article) => (
-                <li key={article.id}>
-                    {article.title}
+            {/* Cicliamo sull'array articles */}
+            {articles.map((article, index) => (
+                // Ogni elemento deve avere una key unica, qui usiamo l'indice
+                <li key={index}>
+                    {/* Mostriamo direttamente la stringa dell'articolo */}
+                    {article}
                 </li>
             ))}
         </ul>
-
     );
 }
 
